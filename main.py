@@ -16,7 +16,8 @@ app.add_middleware(
 )
 
 # Load Hugging Face model (Open-source model for zero-cost setup)
-chatbot = pipeline("text-generation", model="gpt2")
+chatbot = pipeline("text-generation", model="distilgpt2")
+
 
 # Request body schema
 class ChatRequest(BaseModel):
